@@ -20,7 +20,7 @@ from PIL import Image
 
 # Argumentos
 files_path = './Data/files'
-out_path = './Data/Output'
+out_path = './Data/output'
 dem_path = './Data/DEM_m.tif'
 GCP_path = './Data/GCPs.csv'
 focal = 617.6471
