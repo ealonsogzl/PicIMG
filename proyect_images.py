@@ -138,6 +138,8 @@ for n in range(len(photos)):
 
     ima_nump = np.array(pd.read_csv(photos[n], delimiter=';', decimal=',',
                                     header=None))
+    # HACK: remove last column as it is saved as empty column by the camera
+    # software
     ima_nump = np.delete(ima_nump, 640, 1)
     im = Image.fromarray(ima_nump)
     im.save(name_tmp)
